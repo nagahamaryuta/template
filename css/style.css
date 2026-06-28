@@ -114,23 +114,20 @@ header #logo {
 /*メインメニューブロックの設定
 ---------------------------------------------------------------------------*/
 #menubar {
-	animation-name: opa1;
-	animation-duration: 1S;
-	animation-fill-mode: both;
-	background: rgba(255, 255, 255, 0.95);	/* 背景を白ベースに変更 */
+	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 1S;		/*アニメーションの実行時間*/
+	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを維持、終了後は最後のキーフレームを維持。*/
+	background: rgba(18, 18, 18, 0.95);	/* ★背景色：高級感のあるスタイリッシュな黒（95%の不透明度） */
 	position: fixed;overflow: auto;z-index: 99;
 	left: 0px;
 	top: 0px;
-	width: 100%;
-	height: 100%;
-	text-align: center;
+	width: 100%;		/*幅。上のpaddingと合わせて100%になるように。*/
+	height: 100%;	/*高さ。上のpaddingと合わせて100%になるように。*/
+	text-align: center;	/*テキストをセンタリング*/
 }
 #menubar a {
-	color: #333333; /* メニューの文字色を黒系に */
+	color: #ffffff; /* ★メニュー内の文字色：黒背景で見やすいように白に変更 */
 	text-decoration: none;
-}
-#menubar a:hover {
-	color: #0066cc; /* マウスオンでブルーに */
 }
 /*メニューブロックの上に空ける余白*/
 #menubar ul {
@@ -139,6 +136,9 @@ header #logo {
 /*文字サイズ。冒頭で指定しているフォントサイズの1.25倍です。*/
 #menubar li {
 	font-size: 1.25rem;		
+}
+#menubar a:hover {
+	color: #0066cc; /* ★マウスを乗せた時は案1のテーマカラー（ブルー）に光る */
 }
 
 /*コンテンツ
