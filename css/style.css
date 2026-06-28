@@ -162,9 +162,10 @@ header #logo {
 /*h2タグ内のspanタグ（装飾文字）*/
 #contents h2 span {
 	display: inline-block;white-space: nowrap;
-	font-size: 0.875rem;	/*文字サイズ。冒頭で指定しているフォントサイズの0.875倍です。*/
-	border-top: 3px solid rgba(255,255,255,0.2);	/*上の線の幅、線種、色*/
-	padding: 15px 20px 0;	/*上、左右、下への余白*/
+	font-size: 0.875rem;
+	border-top: 3px solid rgba(0,0,0,0.1);	/* 線を薄いグレーに変更 */
+	color: #666666; /* サブタイトルの文字色 */
+	padding: 15px 20px 0;
 }
 /*h3タグ*/
 #contents h3 {
